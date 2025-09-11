@@ -1,0 +1,69 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #4a90e2;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #4a90e2, #50e3c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btngroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #6a11cb, #2575fc);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+
+  .btngroup {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+}
